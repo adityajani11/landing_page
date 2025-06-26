@@ -146,7 +146,7 @@ img:hover {
 
 .cta .btn {
     background: white;
-    color: #4f46e5;
+    color: var(--maroon);
     margin-top: 20px;
 }
 
