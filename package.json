@@ -15,7 +15,7 @@
   "type": "commonjs",
   "main": "index.html",
   "scripts": {
-    "deploy": "gh-pages -d landing_page",
+    "deploy": "gh-pages -d .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
