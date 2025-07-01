@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/particles.css">
     <link rel="stylesheet" href="styles/circle-animation.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -50,7 +51,7 @@
     <!-- About Us -->
     <div class="outer-background">
         <section class="section">
-            <h2 class="custom-heading-2" style="text-align:center; margin-bottom: 30px;">About Us</h2>
+            <h2 class="custom-heading-2" style="text-align:center; margin-bottom: 40px;">About Us</h2>
             <h2 style="margin-bottom: 5px;">Our Story</h2>
             <img id="story__image" src="assets/beauty1.png">
             <p class="description">Welcome to AestheticaBeauty, where our journey began with a singular vision: to
@@ -72,7 +73,7 @@
     <!-- Features -->
     <div class="outer-background-2">
         <section class="section">
-            <h2 class="custom-heading-2" style="text-align:center; margin-bottom: 30px;">Features</h2>
+            <h2 class="custom-heading-2" style="text-align:center; margin-bottom: 45px;">Features</h2>
             <div class="features">
                 <div class="feature">
                     <h3>Personalized Recommendations</h3>
@@ -103,52 +104,74 @@
         </section>
     </div>
 
-    <!-- Collections -->
+    <!-- Collections Carousel -->
     <div id="collections" class="outer-background">
         <section class="card-section">
-            <h2 class="custom-heading-2" style="text-align:center; margin-bottom: 30px;">Collections</h2>
-            <div class="card-container">
+            <h2 class="custom-heading-2" style="text-align:center; margin-bottom: 45Px;">Collections</h2>
 
-                <div class="product-card">
-                    <img class="product-image" src="assets/beauty1.png" alt="icon">
-                    <div class="card-content">
-                        <h4 class="card-title">Face Cream & Lotion</h4>
-                        <p class="card-text">Moisturize and nourish your skin with our best-selling creams.</p>
+            <div class="carousel-container">
+                <button class="carousel-btn prev">&#10094;</button>
+
+                <div class="carousel-track">
+                    <div class="product-card">
+                        <img class="product-image" src="assets/beauty1.png" alt="Face Cream & Lotion">
+                        <div class="card-content">
+                            <h4 class="card-title">Face Cream & Lotion</h4>
+                            <p class="card-text">Moisturize and nourish your skin with our best-selling creams.</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img class="product-image" src="assets/beauty3.png" alt="Lipstick & Powder">
+                        <div class="card-content">
+                            <h4 class="card-title">Lipstick & Powder</h4>
+                            <p class="card-text">Add vibrant color and a flawless finish to your look.</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img class="product-image" src="assets/beauty2.png" alt="Foundation & Primer">
+                        <div class="card-content">
+                            <h4 class="card-title">Foundation & Primer</h4>
+                            <p class="card-text">Get a smooth, radiant base for flawless makeup application.</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img class="product-image" src="assets/brush.png" alt="Eye Makeup Kit">
+                        <div class="card-content">
+                            <h4 class="card-title">Eye Makeup Kit</h4>
+                            <p class="card-text">Create stunning eye looks with our premium kits and palettes.</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img class="product-image" src="assets/beauty1.png" alt="Face Cream & Lotion">
+                        <div class="card-content">
+                            <h4 class="card-title">Face Cream & Lotion</h4>
+                            <p class="card-text">Moisturize and nourish your skin with our best-selling creams.</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img class="product-image" src="assets/beauty2.png" alt="Foundation & Primer">
+                        <div class="card-content">
+                            <h4 class="card-title">Foundation & Primer</h4>
+                            <p class="card-text">Get a smooth, radiant base for flawless makeup application.</p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="product-card">
-                    <img class="product-image" src="assets/beauty3.png" alt="icon">
-                    <div class="card-content">
-                        <h4 class="card-title">Lipstick & Powder</h4>
-                        <p class="card-text">Add vibrant color and a flawless finish to your look.</p>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <img class="product-image" src="assets/beauty2.png" alt="Foundation & Primer">
-                    <div class="card-content">
-                        <h4 class="card-title">Foundation & Primer</h4>
-                        <p class="card-text">Get a smooth, radiant base for flawless makeup application.</p>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <img class="product-image" src="assets/brush.png" alt="Eye Makeup Kit">
-                    <div class="card-content">
-                        <h4 class="card-title">Eye Makeup Kit</h4>
-                        <p class="card-text">Create stunning eye looks with our premium kits and palettes.</p>
-                    </div>
-                </div>
-
+                <button class="carousel-btn next">&#10095;</button>
             </div>
         </section>
     </div>
 
+
     <section class="cta" id="cta">
         <div class="container">
             <h2>Ready to boost your beauty?</h2>
-            <h3 class="contact-heading">Get in touch with us</h3>
+            <h3 class="contact-heading" style="margin-bottom: 45px;">Get in touch with us</h3>
             <form class="contact-form" action="#" method="get">
                 <div class="form-group">
                     <input type="text" name="name" placeholder="Your Name" required>
@@ -164,7 +187,7 @@
                 </div>
                 <button type="submit" class="submit-btn">Send Message</button>
             </form>
-            <a href="#" class="btn top">Go to Top</a>
+            <a href="#" class="btn-top"><i class="fas fa-arrow-up"></i></a>
         </div>
     </section>
 
